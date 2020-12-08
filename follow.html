@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigator">
+            <div class="leftside">
+                <div class="navlink">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="navlink">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="navlink active-navlink">
+                    <a href="follow.html">social media</a>
+                </div>
+            </div>
+
+            <div class="rightside">
+                <div class="brand">
+                    <div>MUHAMMAD MUFLIH ABDURRAFI</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items">
+
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image:url(images/linkedin.jpg)" >
+                    </div>
+                        
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logo/linkedin.png">
+                        </div>
+
+                        <div class="subtitle2">
+                            <a href="https://www.linkedin.com/in/muflihabdurrafi">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <a href="https://twitter.com/move_lih"><img src="images/twitter.jpg" /></a>
+                    </div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logo/twitter.png">
+                        </div>
+
+                        <div class="subtitle2">
+                            <a href="https://twitter.com/move_lih">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image:url(images/instagram.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logo/instagram.png">
+                        </div>
+
+                        <div class="subtitle2">
+                            <a href="https://www.instagram.com/muflihabdurrafi/">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',() => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout',() => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
