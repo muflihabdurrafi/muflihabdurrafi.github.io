@@ -1,0 +1,71 @@
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    border: none;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #345b63;
+}
+
+.form-control.success input {
+    border-color: #29a15b;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    right: 25px;
+}
+
+.form-control.success i.bi-check-circle-fill {
+    color: #29a15b;
+    visibility: visible;
+}
+.form-control.error i.bi-exclamation-circle-fill {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: -3px;
+    width: 100%;
+}
