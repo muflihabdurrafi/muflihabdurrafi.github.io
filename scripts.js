@@ -47,3 +47,9 @@ $(".nav-link").on("click", function () {
     hamburger.removeClass("active");
     navMenu.removeClass("active");
 });
+
+$(".main-gallery").flickity({
+    // options
+    cellAlign: "left",
+    contain: true,
+});

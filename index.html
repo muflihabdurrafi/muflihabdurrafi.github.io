@@ -10,6 +10,9 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
         />
+        <!-- flickity -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+        <!-- external CSS -->
         <link rel="stylesheet" href="styles.css" />
         <title>Muhammad Muflih A.</title>
     </head>
@@ -24,7 +27,7 @@
                             <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
                             <li class="nav-item"><a href="#skills" class="nav-link">skills</a></li>
                             <li class="nav-item"><a href="#projects" class="nav-link">projects</a></li>
-                            <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
+                            <li class="nav-item"><a href="#contacts" class="nav-link">contact</a></li>
                         </ul>
                         <div class="hamburger">
                             <span class="bar"></span>
@@ -36,104 +39,135 @@
             </div>
         </header>
         <section id="home">
-            <div class="layout1">
+            <div class="layout2">
                 <div class="leftSide">
-                    <div class="hdg1">
-                        <div class="rollingContainer"><h1 class="rollingTitle">Web Developer</h1></div>
-                        <div class="subheading">
-                            <p class="hpar"><i class="fa-sharp fa-solid fa-location-dot"></i> Bekasi, Indonesia</p>
-                            <p class="hpar"><i class="fa-solid fa-circle fa-2xs"></i></p>
-                            <p class="hpar"><i class="fa-solid fa-calendar-days"></i> 20 Years Old</p>
+                    <div class="mainTitle">
+                        <div class="rollingContainer"><h1 class="rollingTitle">Full Stack Developer</h1></div>
+                        <div class="subText1">
+                            <p><i class="fa-sharp fa-solid fa-location-dot"></i> Bekasi, Indonesia</p>
+                            <p><i class="fa-solid fa-circle fa-2xs"></i></p>
+                            <p><i class="fa-solid fa-calendar-days"></i> 20 Years Old</p>
                         </div>
-                        <div class="htext">
-                            <p class="hpar">
-                                <span class="hp1">Hello!</span> <br />I am Muhammad Muflih Abdurrafi, <br />
-                                you can call me <br /><span class="hp2">Muflih</span>
+                        <div class="subText2">
+                            <p>
+                                <span class="bigText">Hello!</span> <br />I am Muhammad Muflih Abdurrafi, <br />
+                                you can call me <br /><span class="bigText">Muflih</span>
                             </p>
                         </div>
-                        <p class="hpar">I'm an aspiring front end web developer</p>
+                        <div class="subText2">
+                            <p>I'm an aspiring front end web developer</p>
+                        </div>
 
-                        <a href="mailto:contact.muflih@gmail.com"><button class="btn">CONNECT WITH ME</button></a>
+                        <div class="subText2">
+                            <a href="mailto:contact.muflih@gmail.com"><button class="btn">CONNECT WITH ME</button></a>
+                        </div>
                     </div>
                 </div>
-                <div class="rightSide">
-                    <img class="profilePic" src="images/muflih.png" alt="Picture of Muflih" />
-                </div>
+                <div class="rightSide"><img class="profilePicture" src="images/muflih.png" alt="" /></div>
             </div>
         </section>
-
         <section id="about">
-            <h1>About Me</h1>
-            <div class="layout2">
+            <h1 class="sectionTitle">About Me</h1>
+            <div class="layout1">
                 <div class="leftSide">
                     <p>
                         I am a web developer from Bekasi, Indonesia. I started building websites in 2020 when I also just started pursuing college in the field of Informatics. Every now and then, I've been trying to learn all the mandatory
                         technologies that is related to web programming whilst pursuing college.
                     </p>
-
                     <p>I became passionate about front end engineering. Now I am in the progress of learning the MERN stack and focusing on the front end side of it.</p>
                 </div>
-                <div class="rightSide"><p>My favorite languages are JavaScript and PHP (kind of). In this website you can find some information about me and all the projects that I've done!</p></div>
+                <div class="rightSide">
+                    <p>My favorite languages are JavaScript and PHP (kind of). In this website you can find some information about me and all the projects that I've done!</p>
+                    <p>I am open for any opportunities!</p>
+                </div>
             </div>
         </section>
         <section id="skills">
-            <div class="languages">
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                    <li>Java</li>
-                    <li>C/C++</li>
-                </ul>
+            <h1 class="sectionTitle">Skills</h1>
+            <div class="layout1">
+                <div class="leftSide">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>C/C++</li>
+                    </ul>
+                </div>
+                <div class="middleSide">
+                    <h3>Frameworks, Libraries & Technologies</h3>
+                    <ul>
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>Tailwind</li>
+                        <li>Codeigniter 3</li>
+                        <li>Laravel 9</li>
+                        <!-- <li>Node.js</li>
+                    <li>React JS</li>
+                    <li>Express JS</li> -->
+                    </ul>
+                </div>
+                <div class="rightSide">
+                    <h3>Database</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <!-- <li>MongoDB</li> -->
+                    </ul>
+                </div>
             </div>
-            <h3>Frameworks, Libraries & Technologies</h3>
-            <ul>
-                <li>jQuery</li>
-                <li>Bootstrap</li>
-                <li>Tailwind</li>
-                <li>Codeigniter 3</li>
-                <li>Laravel 9</li>
-                <!-- <li>Node.js</li>
-                <li>React JS</li>
-                <li>Express JS</li> -->
-            </ul>
-            <h3>Database</h3>
-            <ul>
-                <li>MySQL</li>
-                <!-- <li>MongoDB</li> -->
-            </ul>
         </section>
         <section id="projects">
-            <h1>Projects</h1>
-            <div class="projectDisplay">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+            <h1 class="sectionTitle">Projects</h1>
+            <!-- <div class="layout1">
+                <div class="leftSide">halo</div>
+                <div class="rightSide">keren</div>
+            </div> -->
+            <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+                <div class="gallery-cell">
+                    <p>DICE GAME</p>
+                    <div class="projectLinks">
+                        <img onclick="window.open('https://muflihabdurrafi.github.io/dice-game/');" src="images/project1.png" alt="" />
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <p>DRUM KIT</p>
+                    <div class="projectLinks">
+                        <img onclick="window.open('https://muflihabdurrafi.github.io/drum-kit/');" src="images/project2.png" alt="" />
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <p>SIMPLE CALCULATOR</p>
+                    <div class="projectLinks">
+                        <img onclick="window.open('https://muflihabdurrafi.github.io/simple-calculator/');" src="images/project3.png" alt="" />
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <p>INDONESIAN DICTIONARY WORD QUIZ</p>
+                    <div class="projectLinks">
+                        <img onclick="window.open('https://muflihabdurrafi.github.io/kuis-kata-baku/');" src="images/project4.png" alt="" />
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="contact">
-            <h1>Contacts</h1>
+        <section id="contacts">
+            <h1 class="sectionTitle">Contacts</h1>
             <div class="links">
                 <a href="https://github.com/muflihabdurrafi"><i class="fa-brands fa-github fa-2xl"></i></a>
                 <a href="https://www.linkedin.com/in/muflihabdurrafi/"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
                 <a href="https://www.instagram.com/muflihabdurrafi/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
             </div>
-            <h4>Contact me at <a href="mailto:contact.muflih@gmail.com">contact.muflih@gmail.com</a></h4>
-            <p>Made with 💙 by Muflih</p>
+            <h4 class="footerP">Contact me at <a href="mailto:contact.muflih@gmail.com">contact.muflih@gmail.com</a></h4>
+            <p class="footerP">Made with 💙 by Muflih</p>
         </section>
-
+        <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- flickity -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <!-- fontawesome -->
         <script src="https://kit.fontawesome.com/b8e67d2b8a.js" crossorigin="anonymous"></script>
+        <!-- external JS -->
         <script src="scripts.js"></script>
     </body>
 </html>

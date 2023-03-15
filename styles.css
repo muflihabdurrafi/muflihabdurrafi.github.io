@@ -1,23 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    bacgkround-color: #222831;
-}
-
-h4 a {
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-}
-
-body {
-    /* font-family: "Montserrat", sans-serif; */
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    position: relative;
-    text-align: center;
-}
+/* ==============NAVBAR============== */
 
 header {
     background-color: #222831;
@@ -27,46 +8,13 @@ header {
     z-index: 1;
 }
 
-li {
-    list-style: none;
+.container {
+    width: 100%;
+    margin: auto;
 }
-
-#about p {
-    text-align: justify;
-    margin: 3%;
-}
-
-/* id selectors */
-#home {
-    background-color: #222831;
-    padding: 5rem 12rem;
-    text-align: left;
-}
-#about {
-    background-color: #eeeeee;
-    color: black;
-    padding: 5rem 12rem;
-}
-#skills {
-    background-color: #393e46;
-    padding: 5rem 12rem;
-}
-#projects {
-    background-color: #eeeeee;
-    padding: 5rem 12rem;
-    color: black;
-}
-#contact {
-    background-color: #222831;
-    padding: 5rem 12rem;
-    text-align: center;
-}
-
-/* class selectors */
-
-.hidden {
-    /* visibility: hidden; */
-    display: none;
+.subcontainer {
+    width: 85%;
+    margin: auto;
 }
 
 .nav-item {
@@ -82,15 +30,6 @@ a.nav-link:hover {
     color: white;
     text-shadow: 0 0 5px white;
     transition: all 0.5s ease-out;
-}
-
-.container {
-    width: 1600px;
-    margin: auto;
-}
-.subcontainer {
-    width: 85%;
-    margin: auto;
 }
 
 .navbar {
@@ -129,56 +68,91 @@ a.nav-link:hover {
     background-color: #eeeeee;
 }
 
-/*  */
+/* ==============etc============== */
 
-.profilePic {
-    margin: 1rem;
-    width: 80%;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.hdg1 {
-    margin: 10% 0;
+body {
+    font-family: "Poppins", sans-serif;
+    position: relative;
 }
 
-.htext {
-    margin-top: 2rem;
+#home,
+#about,
+#skills,
+#projects,
+#contacts {
+    padding: 6rem 12%;
+}
+
+.sectionTitle{
+    text-align: center;
     margin-bottom: 2rem;
 }
 
-.subheading {
-    display: flex;
-    width: 100%;
-    line-height: 1;
-    margin-top: 1rem;
-    gap: 3%;
-}
-
-.hp1 {
-    font-size: 4rem;
-    font-weight: 700;
-}
-
-.hp2 {
-    font-size: 5rem;
-    font-weight: 700;
-}
+/* ==============layout============== */
 
 .layout1,
 .layout2 {
     display: flex;
+    width: 100%
+    padding: 2rem;
 }
 
-.leftSide {
-    width: 50%;
-    /* position: relative; */
-}
+.leftSide,
 .rightSide {
-    width: 50%;
-    /* position: relative; */
+    width: 100%;
 }
 
-a .btn {
-    margin-top: 3%;
+
+
+/* ==============home============== */
+#home {
+    background-color: #222831;
+    color: #eeeeee;
+}
+
+/* home left */
+.mainTitle {
+    text-align: center;
+    padding: 12% 0 12% 0;
+    /* display: inline-block; */
+}
+
+.rollingContainer{
+    position: relative;
+}
+
+.rollingTitle{
+    position: absolute;
+    font-family: "Roboto Mono", monospace;
+    font-size: 3rem;
+    background: -webkit-linear-gradient(top right, #fff, #00adb5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left:0;
+    right:0;
+}
+
+.subText1{
+    display: flex;
+    width: 100%;
+    line-height: 1;
+    margin-top: 3.5rem;
+    gap: 3%;
+    justify-content: center;
+}
+
+.subText2{
+    margin: 1rem 0 0;
+}
+
+.bigText{
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 .btn {
@@ -198,19 +172,99 @@ a .btn {
     transition: all 0.5s;
 }
 
-.rollingContainer {
-    position: relative;
-    height: 3rem;
+/* home right */
+.profilePicture {
+    width: 450px;
+    display: block;
+    margin-top: 5rem;
 }
 
-.rollingTitle {
-    font-family: "Roboto Mono", monospace;
-    font-size: 3rem;
-    background: -webkit-linear-gradient(top right, #fff, #00adb5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-    position: absolute;
+/* ==============about============== */
+
+#about {}
+
+#about p{
+    padding: 0 3% 3% 0;
+    text-align: justify;
+}
+
+/* about left */
+
+
+
+/* about right */
+
+
+/* ==============skills============== */
+
+#skills {
+    background-color: #222831;
+    color: #eeeeee;
+}
+
+#skills ul {
+    list-style: none;
+}
+
+#skills .layout1 {
+    justify-content: space-between;
+    display:flex;
+}
+
+/* skills left */
+
+#skills .leftSide{
+    width: 20rem;
+}
+
+/* skills middle */
+
+#skills .middleSide{
+    width: 20rem;
+}
+
+/* skills right */
+
+#skills .rightSide{
+    width: 20rem;
+}
+
+/* ==============projects============== */
+
+#projects {
+    /* padding-top: 0; */
+}
+
+.projectLinks {
+    width: 100%;
+}
+
+.projectLinks img {
+    width: 50rem;
+}
+
+.projectLinks img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.gallery-cell p {
+    color: white;
+    text-align:center;
+}
+
+.gallery-cell{
+    padding: 5% 15.3%;
+    background-color: #222831;
+    border-radius: 15px;
+}
+
+
+/* ==============home============== */
+
+#contacts {
+    background-color: #222831;
+    color: #eeeeee;
 }
 
 .links {
@@ -224,51 +278,89 @@ a .btn {
     color: white;
 }
 
-@media (max-width: 1600px) {
-    .container {
-        width: 100%;
+.footerP{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.footerP a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+@media (max-width: 1408px) {
+    
+    .subText1{
+        margin-top: 7.5rem;
     }
 }
 
-@media (max-width: 1460px) {
-    .subheading {
-        margin-top: 4rem;
+@media (max-width: 957px) {
+    .subText1{
+        margin-top: 11rem;
     }
 }
 
-@media (max-width: 1024px) {
-    #home,
-    #about,
-    #skills,
-    #projects,
-    #contact {
-        padding: 6rem 2rem;
-    }
-    #home {
-        /* padding: 0; */
-        padding-top: 5rem;
-        font-size: 1rem;
-    }
-    #about p {
-        width: 100%;
-        margin: auto;
-    }
-    .hdg1 {
-        text-align: left;
-    }
+/* medium displays */
+@media (max-width: 768px) {
+    /* layout */
     .layout1 {
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-    .layout2 {
         flex-direction: column;
         width: 100%;
     }
-    .leftSide,
-    .rightSide {
+    .layout2 {
+        flex-direction: column-reverse;
         width: 100%;
+    }
+    .leftSide, .rightSide{
+        width: 100%;
+    }
+
+    /* home */
+    #home{
+        /* width:100%; */
+    }
+    .mainTitle{
+        padding: 5%;
+    }
+
+    .subText1{
+        margin-top: 7.5rem;
+        font-size: 0.8rem;
+    }
+
+    .profilePicture{
+        width: 300px;
         margin: auto;
     }
+
+    /* about */
+
+    #about{
+        /* width:100%; */
+    }
+
+    /* skills */
+    #skills {
+        text-align: center;
+    }
+    #skills .leftSide, #skills .middleSide, #skills .rightSide{
+        width: 100%;
+    }
+
+    /* projects */
+    .gallery-cell{
+        padding: 0;
+        background-color: #222831;
+        border-radius: 15px;
+    }
+
+    .projectLinks img {
+        width: 30rem;
+    }
+
+    /* navbar */
     .hamburger {
         display: block;
     }
@@ -300,24 +392,26 @@ a .btn {
     }
 }
 
-/* scroll bar */
-
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
+/* small displays */
+@media (max-width: 640px) {
+    /* .rollingTitle{
+        font-size: 2rem;
+    } */
+    .subText1{
+        margin-top: 7.5rem;
+    }
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
+@media (max-width: 400px) {
+    /* .rollingTitle{
+        font-size: 2rem;
+    } */
+    .subText1{
+        margin-top: 11rem;
+    }
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
+
+
+
