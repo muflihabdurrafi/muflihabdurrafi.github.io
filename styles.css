@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+h4 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
 body {
     /* font-family: "Montserrat", sans-serif; */
     margin: 0;
@@ -17,6 +23,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 li {
@@ -24,8 +31,8 @@ li {
 }
 
 #about p {
-    width: 32%;
-    margin: auto;
+    text-align: justify;
+    margin: 3%;
 }
 
 /* id selectors */
@@ -124,11 +131,6 @@ a.nav-link:hover {
 /*  */
 
 .profilePic {
-    /* position: absolute;
-    right: 0; */
-    /* margin: auto; */
-    /* align-items: center; */
-    /* padding: 4rem; */
     margin: 1rem;
     width: 80%;
 }
@@ -146,8 +148,8 @@ a.nav-link:hover {
     display: flex;
     width: 100%;
     line-height: 1;
-    margin-top: 5px;
-    gap: 10px;
+    margin-top: 1rem;
+    gap: 3%;
 }
 
 .hp1 {
@@ -160,7 +162,8 @@ a.nav-link:hover {
     font-weight: 700;
 }
 
-.layout1 {
+.layout1,
+.layout2 {
     display: flex;
 }
 
@@ -194,17 +197,23 @@ a .btn {
     transition: all 0.5s;
 }
 
+.rollingContainer {
+    position: relative;
+    height: 3rem;
+}
+
 .rollingTitle {
     font-family: "Roboto Mono", monospace;
     font-size: 3rem;
-    background: -webkit-linear-gradient(#fff, #00adb5);
+    background: -webkit-linear-gradient(top right, #fff, #00adb5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
+    position: absolute;
 }
 
 .links {
-    margin: 2rem;
+    margin: 1rem;
     justify-content: center;
     display: flex;
     gap: 2rem;
@@ -214,21 +223,18 @@ a .btn {
     color: white;
 }
 
-/* @media only screen and (max-width: 768px) {
-    .layout1 {
-        flex-direction: column-reverse;
-    }
-    .leftSide,
-    .rightSide {
-        width: 100%;
-    }
-} */
-
 @media (max-width: 1600px) {
     .container {
         width: 100%;
     }
 }
+
+@media (max-width: 1460px) {
+    .subheading {
+        margin-top: 4rem;
+    }
+}
+
 @media (max-width: 1024px) {
     #home,
     #about,
@@ -251,6 +257,10 @@ a .btn {
     }
     .layout1 {
         flex-direction: column-reverse;
+        width: 100%;
+    }
+    .layout2 {
+        flex-direction: column;
         width: 100%;
     }
     .leftSide,
