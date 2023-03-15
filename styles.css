@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    bacgkround-color: #222831;
 }
 
 h4 a {
@@ -16,7 +17,6 @@ body {
     color: white;
     position: relative;
     text-align: center;
-    bacgkround-color: #222831;
 }
 
 header {
