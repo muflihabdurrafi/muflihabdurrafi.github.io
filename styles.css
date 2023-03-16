@@ -70,6 +70,7 @@ a.nav-link:hover {
 
 /* ==============etc============== */
 
+
 * {
     margin: 0;
     padding: 0;
@@ -92,6 +93,10 @@ body {
     text-align: center;
     margin-bottom: 2rem;
 }
+
+.fade {
+    opacity: 0;
+  }
 
 /* ==============layout============== */
 
@@ -262,7 +267,7 @@ body {
 }
 
 
-/* ==============home============== */
+/* ==============contacts============== */
 
 #contacts {
     background-color: #222831;
