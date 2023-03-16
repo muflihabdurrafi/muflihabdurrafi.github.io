@@ -28,7 +28,7 @@ a.nav-link {
 
 a.nav-link:hover {
     color: white;
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 10px #00adb5;
     transition: all 0.5s ease-out;
 }
 
@@ -181,10 +181,12 @@ body {
 
 /* ==============about============== */
 
-#about {}
+#about .layout1{
+    gap: 5%;
+}
 
 #about p{
-    padding: 0 3% 3% 0;
+    padding: 0 0% 5% 0;
     text-align: justify;
 }
 
@@ -198,7 +200,7 @@ body {
 /* ==============skills============== */
 
 #skills {
-    background-color: #222831;
+    background-color: #393E46;
     color: #eeeeee;
 }
 
@@ -337,8 +339,8 @@ body {
 
     /* about */
 
-    #about{
-        /* width:100%; */
+    #about .layout1{
+        gap: 10%;
     }
 
     /* skills */
