@@ -33,6 +33,14 @@ function typing_animation() {
     }
 }
 
+setTimeout(() => {
+    $(".opening").addClass("openingAnimation");
+    $(".openingBG").addClass("openingBGAnimation");
+}, 1000);
+setTimeout(() => {
+    $(".openingBG").remove();
+}, 4000);
+
 typing_animation();
 
 const hamburger = $(".hamburger");

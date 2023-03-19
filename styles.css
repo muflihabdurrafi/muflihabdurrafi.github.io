@@ -1,3 +1,43 @@
+/* opening */
+
+.openingBG {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: normal;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.opening {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 10%;
+    margin: auto;
+    color: white;
+    font-size: 10vw;
+    font-weight: bold;
+    z-index: 2;
+    mix-blend-mode: normal;
+    display: inline-block;
+    width: 37vw;
+}
+
+.openingBGAnimation {
+    mix-blend-mode: multiply;
+}
+
+.openingAnimation {
+    left: 0;
+    top: 0;
+    font-size: 500vw;
+    transform: translate(-200%, -35%);
+    transition: 3s all ease-in;
+}
+
 /* ==============NAVBAR============== */
 
 header {
