@@ -38,6 +38,7 @@
     transition: 3s all ease-in;
 }
 
+
 /* ==============NAVBAR============== */
 
 header {
@@ -394,6 +395,12 @@ body {
     }
     .leftSide, .rightSide{
         width: 100%;
+    }
+
+    /* animation */
+    .openingAnimation {
+        font-size: 1000vw;
+        transform: translate(-500%, -35%);
     }
 
     /* home */
