@@ -214,3 +214,11 @@ p {
         left: 0;
     }
 }
+
+/* small displays */
+@media (max-width: 640px) {
+    /* animation */
+    .openingAnimation, .opening, .openingBG {
+        display: none;
+    }
+}
