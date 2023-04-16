@@ -286,7 +286,6 @@ body {
 .projectLists{
     display: grid;
     grid-template-columns: 50% 50%;
-    
 }
 
 .projectLinks {
@@ -366,11 +365,20 @@ body {
         margin-top: 7.5rem;
     }
 
-    .projectLinks img {
-        width: 30rem;
+    .projectLinks:hover .img_description{
+        cursor: pointer;
+        visibility: visible;
+        opacity: 0;
     }
 
- 
+    .projectLinks img {
+        width: 100%;
+    }
+
+    .projectLists{
+        display: flex;
+        flex-direction:column;
+    } 
 
     .projectLinks p {
         font-size: 1rem;
