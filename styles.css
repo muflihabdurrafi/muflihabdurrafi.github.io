@@ -283,6 +283,12 @@ body {
     /* padding-top: 0; */
 }
 
+.projectLists{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
 .projectLinks {
     width: 100%;
     position: relative;
@@ -295,23 +301,18 @@ body {
 }
 
 .projectLinks img {
-    width: 50rem;
+    width: 100%;
 }
 
-.projectLinks img:hover{
-    
-}
+.projectLinks p .bigText{
+        font-size: 2rem;
+        font-weight: 700;
+    }
 
-.gallery-cell p {
+.projectWrapper p {
     color: white;
     text-align:center;
     padding: 4rem;
-}
-
-.gallery-cell{
-    padding: 5% 15.3%;
-    background-color: #222831;
-    border-radius: 15px;
 }
 
 .img_description{
@@ -326,6 +327,8 @@ body {
     opacity: 0;
     transition: opacity .2s, visibility .2s;
 }
+
+
 
 
 /* ==============contacts============== */
@@ -367,9 +370,7 @@ body {
         width: 30rem;
     }
 
-    .projectLinks p .bigText{
-        font-size:1rem;
-    }
+ 
 
     .projectLinks p {
         font-size: 1rem;
